@@ -1,0 +1,48 @@
+/* ARMSTRONG NUMBER */
+
+#include <stdio.h>
+ 
+int main()
+{
+   int number, sum = 0, temp, remainder;
+ 
+   printf("Enter an integer\n");
+   scanf("%d",&number);
+ 
+   temp = number;
+ 
+   while( temp != 0 )
+   {
+      remainder = temp%10;
+      sum = sum + remainder*remainder*remainder;
+      temp = temp/10;
+   }
+ 
+   if ( number == sum )
+      printf("Entered number is an armstrong number.\n");
+   else
+      printf("Entered number is not an armstrong number.\n");
+ 
+   return 0;
+}
+
+
+/* ADD TWO NUMBERS USING POINTERS */
+#include <stdio.h>
+ 
+int main()
+{
+   int first, second, *p, *q, sum;
+ 
+   printf("Enter two integers to add\n");
+   scanf("%d%d", &first, &second);
+ 
+   p = &first;
+   q = &second;
+ 
+   sum = *p + *q;
+ 
+   printf("Sum of entered numbers = %d\n",sum);
+ 
+   return 0;
+}

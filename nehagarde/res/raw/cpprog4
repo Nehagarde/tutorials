@@ -1,0 +1,38 @@
+/* Program to draw 2 rectangles and fill 1 of them  */
+
+#include <iostream.h>
+#include <conio.h>
+#include <graphics.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void main()
+{
+  clrscr();
+  int gd = DETECT,gm,errorcode; //Requesting auto-detection.
+
+  //Initializing graphics and local variables.
+  initgraph (&gd, &gm, "d:\\bc3\\bgi"); //Path where graphics drivers are installed
+
+  //Read result of initialization.
+  errorcode = graphresult();
+
+  //An error occured.
+  if (errorcode != grOk)
+    {
+      cout << "Graphics error occured : \n" << grapherrormsg(errorcode) << endl;
+      cout << "Press any key to stop : ";
+      getch();
+      exit(1);
+    }
+
+  /*Drawing a rectangle having top LHS vertex at (300, 300)
+  and bottom RHS vertex at (600, 400)*/
+  rectangle(300, 300, 600, 400);
+  rectangle(100, 100, 200, 200);
+  getch();
+  floodfill(120, 120, WHITE);
+  getch();
+  closegraph();
+}

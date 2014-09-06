@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="This is an app that will provide you the code for most commonly asked basic programs for 
+        different programming languages. It also provides you a way to find out your mastery over the languages 
+        by taking the quiz.! Keep Learning!Stay Hungry!   " />
+
+</LinearLayout>

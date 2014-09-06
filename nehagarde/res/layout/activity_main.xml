@@ -1,0 +1,35 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:orientation="vertical"
+    android:padding="25dp" >
+        
+         <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="your total is 0"
+        android:textSize="35dp" 
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/tvdisp"/>
+         
+         <Button
+         android:layout_width="250dp"
+         android:layout_height="wrap_content" 
+         android:text="add one"  
+         android:textSize="20dp" 
+         android:layout_gravity="center"
+         android:id="@+id/badd"/>
+       
+          <Button
+         android:layout_width="250dp"
+         android:layout_height="wrap_content" 
+         android:text="subtract one"  
+         android:textSize="20dp" 
+         android:layout_gravity="center"
+         android:id="@+id/bsub" />"
+</LinearLayout>

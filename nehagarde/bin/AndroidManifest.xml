@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.garde.neha"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        
+        
+       
+         <activity
+            android:name=".Login"
+            android:label="Codeit" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.garde.neha.Splash" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+     <activity
+            android:name=".About"
+            android:label="About App!" 
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.garde.neha.About" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Users"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.garde.neha.Users" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.garde.neha.Menu" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cprogs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.garde.neha.Cprogs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cppprogs"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.garde.neha.Cprogs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cprog1"
+            android:label="1" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cprog2"
+            android:label="2" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cprog3"
+            android:label="3" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cprog4"
+            android:label="4" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cprog5"
+            android:label="5" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".cprog6"
+            android:label="6" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".cprog7"
+            android:label="7" >
+            <intent-filter>
+                <action android:name="com.garde.neha.cprog7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".cprog8"
+            android:label="8" >
+        </activity>
+        
+        <activity
+            android:name=".cprog9"
+            android:label="9" >
+        </activity>
+        <activity
+            android:name=".cprog10"
+            android:label="10" >
+        </activity>
+        <activity
+            android:name=".cprog11"
+            android:label="11" >
+        </activity>
+        <activity
+            android:name=".cprog12"
+            android:label="12" >
+        </activity>
+        <activity
+            android:name=".cprog13"
+            android:label="13" >
+        </activity>
+        <activity
+            android:name=".cprog14"
+            android:label="14" >
+        </activity>
+        <activity
+            android:name=".cprog15"
+            android:label="15" >
+        </activity>
+        
+        <activity
+            android:name=".cprog16"
+            android:label="16" >
+        </activity>
+        <activity
+            android:name=".cprog17"
+            android:label="17" >
+        </activity>
+        <activity
+            android:name=".cprog18"
+            android:label="18" >
+        </activity>
+        <activity
+            android:name=".cprog19"
+            android:label="19" >
+        </activity>
+        <activity
+            android:name=".cprog20"
+            android:label="20" >
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:label="Feedback" >
+           
+        </activity>
+        
+        
+        
+        
+        
+        
+        
+         <activity
+            android:name=".pgm1"
+            android:label="1" >
+        </activity>
+         <activity
+            android:name=".pgm2"
+            android:label="2" >
+        </activity>
+         <activity
+            android:name=".pgm3"
+            android:label="3" >
+        </activity>
+         <activity
+            android:name=".pgm4"
+            android:label="4" >
+        </activity>
+         <activity
+            android:name=".pgm5"
+            android:label="5" >
+        </activity>
+         <activity
+            android:name=".pgm6"
+            android:label="6" >
+        </activity>
+         <activity
+            android:name=".pgm7"
+            android:label="7" >
+        </activity>
+         <activity
+            android:name=".pgm8"
+            android:label="8" >
+        </activity>
+         <activity
+            android:name=".pgm9"
+            android:label="9" >
+        </activity>
+         <activity
+            android:name=".pgm10"
+            android:label="10" >
+        </activity>
+         <activity
+            android:name=".pgm11"
+            android:label="11" >
+        </activity>
+         <activity
+            android:name=".pgm12"
+            android:label="12" >
+        </activity>
+         <activity
+            android:name=".pgm13"
+            android:label="13" >
+        </activity>
+         <activity
+            android:name=".pgm14"
+            android:label="14" >
+            
+             
+        </activity>
+              <activity
+            android:name=".Camera"
+            android:label="Camera" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+              
+              
+         
+        
+    
+        <activity
+            android:name=".q1"
+            android:label="Question 1" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+     
+        <activity
+            android:name=".q2"
+            android:label="Question 2" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".q3"
+            android:label="Question 3" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".q4"
+            android:label="Question 4" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q4" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".q5"
+            android:label="Question 5" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q5" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         
+             <activity
+            android:name=".q6"
+            android:label="Question 6" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q6" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+     
+        <activity
+            android:name=".q7"
+            android:label="Question 7" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q7" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".q8"
+            android:label="Question 8" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q8" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".q9"
+            android:label="Question 9" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q9" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".q10"
+            android:label="Question 10" >
+            <intent-filter>
+                <action android:name="com.garde.neha.q10" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          <activity
+            android:name=".Take_Quiz"
+            android:label="	c Quiz" >
+            <intent-filter>
+                <action android:name="com.garde.neha.Take_Quiz" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

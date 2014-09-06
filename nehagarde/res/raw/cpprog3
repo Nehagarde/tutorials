@@ -1,0 +1,20 @@
+/* Program to enter two integers and find their sum and average */
+
+
+#include <iostream.h>
+#include <iostream.h>
+#include <conio.h>
+
+void main()
+{
+clrscr();
+int x,y,sum;
+float average;
+cout << "Enter 2 integers : " << endl;
+cin>>x>>y;
+sum=x+y;
+average=sum/2;
+cout << "The sum of " << x << " and " << y << " is " << sum << "." << endl;
+cout << "The average of " << x <<  " and " << y << " is " << average << "." << endl;
+getch();
+}

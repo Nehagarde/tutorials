@@ -1,0 +1,39 @@
+/*  Virtual functions */
+
+Class A 
+{ 
+        int a; 
+        public: 
+        A() 
+        {
+                 a = 1; 
+        } 
+        virtual void show() 
+        { 
+                    cout <<a;
+        } 
+};
+
+Class B: public A 
+{ 
+         int b; 
+         public: 
+         B() 
+         { 
+                 b = 2; 
+         }
+         virtual void show() 
+         {  
+                  cout <<b;
+         }
+};
+
+int main() 
+{ 
+           A *pA; 
+           B oB; 
+           pA = &oB; 
+           pA->show(); 
+           return 0; 
+}
+

@@ -1,0 +1,296 @@
+/* VARIOUS STRING PROGRAMS */
+
+/* FREQUENCY OF CHARACTERS IN A STRING */
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+   char string[100];
+   int c = 0, count[26] = {0};
+ 
+   printf("Enter a string\n");
+   gets(string);
+ 
+   while ( string[c] != '\0' )
+   {
+      /* Considering characters from 'a' to 'z' only */
+ 
+      if ( string[c] >= 'a' && string[c] <= 'z' ) 
+         count[string[c]-'a']++;
+ 
+      c++;
+   }
+ 
+   for ( c = 0 ; c < 26 ; c++ )
+   {
+      if( count[c] != 0 )
+         printf("%c occurs %d times in the entered string.\n",c+'a',count[c]);
+   }
+ 
+   return 0;
+}
+
+/* COMPARE TWO STRINGS */
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+   char a[100], b[100];
+ 
+   printf("Enter the first string\n");
+   gets(a);
+ 
+   printf("Enter the second string\n");
+   gets(b);
+ 
+   if( strcmp(a,b) == 0 )
+      printf("Entered strings are equal.\n");
+   else
+      printf("Entered strings are not equal.\n");
+ 
+   return 0;
+}
+
+/* STRING LENGTH */
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+   char a[100];
+   int length;
+ 
+   printf("Enter a string to calculate it's length\n");
+   gets(a);
+ 
+   length = strlen(a);
+ 
+   printf("Length of entered string is = %d\n",length);
+ 
+   return 0;
+}
+
+
+/* C program to copy a string */
+#include<stdio.h>
+#include<string.h>
+ 
+main()
+{
+   char source[] = "C program";
+   char destination[50];
+ 
+   strcpy(destination, source);
+ 
+   printf("Source string: %s\n", source);
+   printf("Destination string: %s\n", destination);
+ 
+   return 0;
+}
+
+
+/* CONCATENATE STRINGS */
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+   char a[100], b[100];
+ 
+   printf("Enter the first string\n");
+   gets(a);
+ 
+   printf("Enter the second string\n");
+   gets(b);
+ 
+   strcat(a,b);
+ 
+   printf("String obtained on concatenation is %s\n",a);
+ 
+   return 0;
+}
+
+
+
+/* String reverse in c*/
+
+#include <stdio.h>
+#include <string.h>
+ 
+int main()
+{
+   char arr[100];
+ 
+   printf("Enter a string to reverse\n");
+   gets(arr);
+ 
+   strrev(arr);
+ 
+   printf("Reverse of entered string is \n%s\n",arr);
+ 
+   return 0;
+}
+
+
+
+/ * C substring code */
+#include <stdio.h>
+#include <malloc.h>
+ 
+char* substring(char*, int, int);
+ 
+int main() 
+{
+   char string[100], *pointer;
+   int position, length;
+ 
+   printf("Enter a string\n");
+   gets(string);
+ 
+   printf("Enter the position and length of substring\n");
+   scanf("%d%d",&position, &length);
+ 
+   pointer = substring( string, position, length);
+ 
+   printf("Required substring is \"%s\"\n", pointer);
+ 
+   free(pointer);
+ 
+   return 0;
+}
+ 
+/*C substring function: It returns a pointer to the substring */
+ 
+char *substring(char *string, int position, int length) 
+{
+   char *pointer;
+   int c;
+ 
+   pointer = malloc(length+1);
+ 
+   if (pointer == NULL)
+   {
+      printf("Unable to allocate memory.\n");
+      exit(EXIT_FAILURE);
+   }
+ 
+   for (c = 0 ; c < position -1 ; c++) 
+      string++; 
+ 
+   for (c = 0 ; c < length ; c++)
+   {
+      *(pointer+c) = *string;      
+      string++;   
+   }
+ 
+   *(pointer+c) = '\0';
+ 
+   return pointer;
+}
+
+/* REMOVE VOWELS */
+
+#include <stdio.h>
+#include <string.h>
+ 
+int check_vowel(char);
+ 
+int main()
+{
+  char s[100], t[100];
+  int i, j = 0;
+ 
+  printf("Enter a string to delete vowels\n");
+  gets(s);
+ 
+  for(i = 0; s[i] != '\0'; i++) {
+    if(check_vowel(s[i]) == 0) {       //not a vowel
+      t[j] = s[i];
+      j++;
+    }
+  }
+ 
+  t[j] = '\0';
+ 
+  strcpy(s, t);    //We are changing initial string
+ 
+  printf("String after deleting vowels: %s\n", s);
+ 
+  return 0;
+}
+ 
+ 
+int check_vowel(char c)
+{
+  switch(c) {
+    case 'a':
+    case 'A':
+    case 'e':
+    case 'E':
+    case 'i':
+    case 'I':
+    case 'o':
+    case 'O':
+    case 'u':
+    case 'U':
+      return 1;
+    default:
+      return 0;
+  }
+}
+
+/* ANAGRAMS */
+C anagram programming code
+#include <stdio.h>
+ 
+int check_anagram(char [], char []);
+ 
+int main()
+{
+   char a[100], b[100];
+   int flag;
+ 
+   printf("Enter first string\n");
+   gets(a);
+ 
+   printf("Enter second string\n");
+   gets(b);
+ 
+   flag = check_anagram(a, b);
+ 
+   if (flag == 1)
+      printf("\"%s\" and \"%s\" are anagrams.\n", a, b);
+   else
+      printf("\"%s\" and \"%s\" are not anagrams.\n", a, b);
+ 
+   return 0;
+}
+ 
+int check_anagram(char a[], char b[])
+{
+   int first[26] = {0}, second[26] = {0}, c = 0;
+ 
+   while (a[c] != '\0')
+   {
+      first[a[c]-'a']++;
+      c++;
+   }
+ 
+   c = 0;
+ 
+   while (b[c] != '\0')
+   {
+      second[b[c]-'a']++;
+      c++;
+   }
+ 
+   for (c = 0; c < 26; c++)
+   {
+      if (first[c] != second[c])
+         return 0;
+   }
+ 
+   return 1;
+}
