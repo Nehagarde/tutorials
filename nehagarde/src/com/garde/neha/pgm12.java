@@ -3,11 +3,12 @@ package com.garde.neha;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
 
-public class pgm12 extends ActionBarActivity{
+public class pgm12 extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
