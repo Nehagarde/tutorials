@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+         >
         
         
         
@@ -30,7 +30,7 @@
         
     <activity
             android:name=".Splash"
-            android:label="@string/app_name" >
+            android:label="Welcome" >
             <intent-filter>
                 <action android:name="com.garde.neha.Splash" />
 
@@ -59,7 +59,7 @@
         </activity>
         <activity
             android:name=".Menu"
-            android:label="@string/app_name" >
+            android:label="Menu" >
             <intent-filter>
                 <action android:name="com.garde.neha.Menu" />
 
@@ -68,7 +68,7 @@
         </activity>
         <activity
             android:name=".Cprogs"
-            android:label="@string/app_name" >
+            android:label="C programs" >
             <intent-filter>
                 <action android:name="com.garde.neha.Cprogs" />
 
@@ -77,7 +77,7 @@
         </activity>
         <activity
             android:name=".Cppprogs"
-            android:label="@string/app_name" >
+            android:label="C++ progs" >
             <intent-filter>
                 <action android:name="com.garde.neha.Cprogs" />
 
@@ -271,9 +271,30 @@
          <activity
             android:name=".pgm14"
             android:label="14" >
+          </activity>
+            <activity
+            android:name=".pgm15"
+            android:label="15" >
+          </activity>  <activity
+            android:name=".pgm16"
+            android:label="16" >
+          </activity>  <activity
+            android:name=".pgm17"
+            android:label="17" >
+          </activity>  <activity
+            android:name=".pgm18"
+            android:label="18" >
+          </activity>  <activity
+            android:name=".pgm19"
+            android:label="19" >
+          </activity>
+            <activity
+            android:name=".pgm20"
+            android:label="20" >
+          </activity>
+          
             
-             
-        </activity>
+            
               <activity
             android:name=".Camera"
             android:label="Camera" 

@@ -70,8 +70,8 @@ public class Login extends Activity implements OnClickListener{
 			}
 			break;
 		case R.id.Cancel:
-			Intent i=new Intent("com.garde.neha.Login");
-			startActivity(i);
+			un.setText("");
+			pass.setText("");
 			break;
 		
 		case R.id.signup:
